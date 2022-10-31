@@ -23,14 +23,12 @@ def main():
 
     if args.single:
         data = pd.read_csv(args.data, index_col=0, parse_dates=True)
-        events = pd.Series(np.ones(data.shape[0]) * 10, index=data.index)
+        events = pd.Series(np.ones(data.shape[0]), index=data.index)
     else:
         data = pd.read_csv(args.data, index_col=0, parse_dates=True)
         events = data.km
 
     date_start = datetime.strptime(args.start, "%Y-%m-%d")
-    date_end = datetime.strptime(args.end, "%Y-%m-%d")
-    all_days = pd.date_range(date_start, date_end)
 
     if args.single:
         calmap.yearplot(events, year=date_start.year, daylabels="MTWTFSS",
