@@ -4,19 +4,19 @@
 
 ## 使い方
 
-- 筋トレ用（9月から10月までを作成）
+- 筋トレ用
 
 ```
-python src/main.py --data ./data/power-training.csv --single --output power-training.png
+python src/main.py --data ./data/power-training.csv --single --output output/power-training.png
 ```
 
 ![power-training.png](output/power-training.png)
 
 
-- ジョギング用（1月から10月までを作成）
+- ジョギング用
 
 ```
-python src/main.py --data ./data/jogging.csv --output jogging.png
+python src/main.py --data ./data/jogging.csv --output output/jogging.png
 ```
 
 ![jogging.png](output/jogging.png)
