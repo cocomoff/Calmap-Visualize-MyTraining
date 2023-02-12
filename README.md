@@ -20,3 +20,8 @@ python src/main.py --data ./data/jogging.csv --output output/jogging.png
 ```
 
 ![jogging.png](output/jogging.png)
+
+
+- 山登り（累積和）
+
+![hill-jogging](output/hill-jogging.png)
